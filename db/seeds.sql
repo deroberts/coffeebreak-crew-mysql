@@ -18,13 +18,13 @@ VALUES
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES 
-    ("John", "Doe", 1, NULL),
-    ("Jane", "Smith", 2, 1),
-    ("Bob", "Johnson", 5, 1),
-    ("Sarah", "Lee", 6, 2),
-    ("Mike", "Williams", 7, 3),
-    ("David", "Brown", 8, 4),
-    ("Karen", "Taylor", 5, 1),
-    ("Mark", "Davis", 6, 2);
+    ("Buck", "Strickland", 1, NULL),
+    ("Dale", "Gribble", 2, 1),
+    ("Randy", "Marsh", 5, 1),
+    ("Maxwell", "House", 6, 2),
+    ("Jojo", "Joestar", 7, 3),
+    ("Guy", "Fieri", 8, 4),
+    ("Bilbo", "Baggins", 5, 1),
+    ("Reanu", "Keeves", 6, 2);
 
 
