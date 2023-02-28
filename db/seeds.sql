@@ -1,24 +1,30 @@
-INSERT INTO department (dept_name, dept_ID)
+INSERT INTO department (name)
 VALUES 
-        ("Assistant Manager", 1),
-        ("counsel", 2),
-        ("moral support", 3),
-        ("unsolicited advice giver", 4),
-        ("who knows but they're on payroll", 5);
+    ("Sales"),
+    ("Marketing"),
+    ("Engineering"),
+    ("Finance");
 
-INSERT INTO employee (employee_ID, first_name, last_name)
+INSERT INTO role (title, salary, department_id)
 VALUES 
-        (1, "Hank", "Hill"),
-        (2, "Jeffrey", "Boomhauer"),
-        (3, "John", "Redcorn"),
-        (4, "Peggy", "Hill"),
-        (5, "Rusty", "Shackleford");
+    ("Sales Manager", 75000, 1),
+    ("Marketing Manager", 80000, 2),
+    ("Lead Engineer", 100000, 3),
+    ("Financial Analyst", 60000, 4),
+    ("Salesperson", 50000, 1),
+    ("Marketing Specialist", 60000, 2),
+    ("Software Engineer", 80000, 3),
+    ("Accountant", 55000, 4); 
 
-INSERT INTO roles (role_ID, title, salary, dept_id)
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES 
-        (1, "Assistant Manager", 38000, 1),
-        (2, "counsel", 80000, 2),
-        (3, "moral support", 60000, 3),
-        (4, "unsolicited advice giver", 100000, 4),
-        (5, "who knows but they're on payroll", 75000, 5); 
+    ("John", "Doe", 1, NULL),
+    ("Jane", "Smith", 2, 1),
+    ("Bob", "Johnson", 5, 1),
+    ("Sarah", "Lee", 6, 2),
+    ("Mike", "Williams", 7, 3),
+    ("David", "Brown", 8, 4),
+    ("Karen", "Taylor", 5, 1),
+    ("Mark", "Davis", 6, 2);
+
 
